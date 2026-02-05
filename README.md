@@ -2,161 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Oxygen Gym | Premium Fitness Center</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saurabh Enterprises - Mobile Repair & Showroom</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
-    header {
-      background-color: #111;
-      color: gold;
-      padding: 20px;
-      text-align: center;
+
+    body{
+      background:#0d0d0d;
+      color:#fff;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+
+    header{
+      min-height:100vh;
+      background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+      url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
     }
-    header p {
-      margin: 5px 0 0;
-      font-weight: 500;
+
+    header h1{
+      font-size:3rem;
+      color:#00ffcc;
+      letter-spacing:2px;
     }
-    .contact-btns {
-      margin-top: 10px;
+
+    header p{
+      margin:15px 0;
+      font-size:1.1rem;
+      color:#ddd;
     }
-    .contact-btns a {
-      text-decoration: none;
-      color: #fff;
-      background-color: gold;
-      padding: 10px 20px;
-      margin: 5px;
-      display: inline-block;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: 0.3s;
+
+    .btns a{
+      display:inline-block;
+      margin:10px;
+      padding:12px 28px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
     }
-    .contact-btns a:hover {
-      background-color: #c39f00;
+
+    .call{
+      background:#00ffcc;
+      color:#000;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
+
+    .whatsapp{
+      border:2px solid #00ffcc;
+      color:#00ffcc;
     }
-    h2 {
-      color: #111;
-      text-align: center;
-      margin-bottom: 30px;
+
+    .btns a:hover{
+      transform:scale(1.05);
     }
-    .services, .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+
+    section{
+      padding:70px 20px;
+      max-width:1200px;
+      margin:auto;
     }
-    .service-box, .gallery-box {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      text-align: center;
+
+    section h2{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:2.2rem;
+      color:#00ffcc;
     }
-    .service-box h3 {
-      margin-bottom: 10px;
-      color: #111;
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
-    .service-box p {
-      font-size: 0.95em;
+
+    .card{
+      background:#151515;
+      padding:30px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,255,204,.15);
     }
-    .gallery-box img {
-      width: 100%;
-      border-radius: 10px;
+
+    .card h3{
+      margin-bottom:10px;
+      color:#00ffcc;
     }
-    .location {
-      text-align: center;
-      margin-top: 30px;
+
+    .card p{
+      color:#ccc;
+      font-size:.95rem;
     }
-    .location iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 10px;
+
+    .about{
+      text-align:center;
+      color:#ccc;
+      max-width:900px;
+      margin:auto;
+      font-size:1.05rem;
+      line-height:1.8;
     }
-    footer {
-      background: #111;
-      color: gold;
-      text-align: center;
-      padding: 20px;
+
+    .map iframe{
+      width:100%;
+      height:350px;
+      border:0;
+      border-radius:15px;
     }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:25px;
+      color:#aaa;
+      font-size:.9rem;
+    }
+
+    footer span{
+      color:#00ffcc;
+    }
+
     @media(max-width:600px){
-      header h1 { font-size: 1.5em; }
-      .contact-btns a { padding: 8px 15px; font-size: 0.9em; }
+      header h1{font-size:2.2rem;}
     }
   </style>
 </head>
 <body>
 
+<!-- HERO -->
 <header>
-  <h1>Saurabh Enterprises</h1>
-  <p>Multi Brand Mobile Showroom & Repair Since 2005</p>
-  <div class="contact-btns">
-    <a href="tel:+919839485908">Call Now</a>
-    <a href="https://wa.me/919839485908" target="_blank">WhatsApp</a>
+  <div>
+    <h1>OXYGEN GYM</h1>
+    <p>Build Your Body • Boost Your Strength • Transform Your Life</p>
+
+    <div class="btns">
+      <a href="tel:+919120540640" class="call">Call Now</a>
+      <a href="https://wa.me/919120540640" target="_blank" class="whatsapp">WhatsApp</a>
+    </div>
   </div>
 </header>
 
+<!-- SERVICES -->
 <section>
-  <h2>Our Services</h2>
+  <h2>Our Programs</h2>
+
   <div class="services">
-    <div class="service-box">
-      <h3>Mobile Repair</h3>
-      <p>Screen, battery, software, charging port, camera repair & more.</p>
+    <div class="card">
+      <h3>Weight Training</h3>
+      <p>Advanced equipment & expert guidance for muscle growth.</p>
     </div>
-    <div class="service-box">
-      <h3>Recharge & SIM Services</h3>
-      <p>Mobile recharge, SIM activation, balance check & top-up services.</p>
+
+    <div class="card">
+      <h3>Cardio Training</h3>
+      <p>Modern machines to improve stamina & heart health.</p>
     </div>
-    <div class="service-box">
-      <h3>Accessories</h3>
-      <p>Phone cases, chargers, earphones, screen protectors & more.</p>
+
+    <div class="card">
+      <h3>Personal Training</h3>
+      <p>One-to-one training for faster and safer results.</p>
     </div>
-    <div class="service-box">
-      <h3>New Mobile Sale</h3>
-      <p>All major brands with EMI & exchange options available.</p>
+
+    <div class="card">
+      <h3>Fat Loss Program</h3>
+      <p>Customized workouts & diet guidance for weight loss.</p>
     </div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section>
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <div class="gallery-box">
-      <img src="https://via.placeholder.com/400x300?text=Mobile+1" alt="Mobile 1">
-    </div>
-    <div class="gallery-box">
-      <img src="https://via.placeholder.com/400x300?text=Mobile+2" alt="Mobile 2">
-    </div>
-    <div class="gallery-box">
-      <img src="https://via.placeholder.com/400x300?text=Mobile+3" alt="Mobile 3">
-    </div>
-    <div class="gallery-box">
-      <img src="https://via.placeholder.com/400x300?text=Mobile+4" alt="Mobile 4">
-    </div>
-  </div>
+  <h2>Why Choose Oxygen Gym?</h2>
+  <p class="about">
+    Oxygen Gym is a premium fitness center focused on strength, stamina,
+    and total body transformation. Our professional trainers, modern
+    equipment, and disciplined environment help you achieve real results.
+    Join us and become the best version of yourself.
+  </p>
 </section>
 
-<section class="location">
-  <h2>Our Location</h2>
-  <p>Jaycees Crossing, Opposite Hindustan Times, Jaunpur, Uttar Pradesh 222002, India</p>
-  <iframe src="https://www.google.com/maps?q=Jaycees+Crossing,+Opposite+Hindustan+Times,+Jaunpur,+Uttar+Pradesh+222002,+India&output=embed"></iframe>
+<!-- LOCATION -->
+<section class="map">
+  <h2>Visit Us</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Oxygen+Gym&output=embed">
+  </iframe>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  &copy; 2026 Saurabh Enterprises | All Rights Reserved
+  © 2026 <span>Oxygen Gym</span> | All Rights Reserved  
+  <br> Contact: +91 91205 40640
 </footer>
 
 </body>
